@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OilFieldsList.OilFieldsListController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <TableView fx:id="tableView" onMouseClicked="#loadResults" prefHeight="375.0" prefWidth="832.0" style="-fx-font-size: 20;" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="nameCol" editable="false" prefWidth="147.0" text="Name" />
+                  <TableColumn fx:id="apiCol" editable="false" prefWidth="85.0" text="API" />
+                  <TableColumn fx:id="vicosityCol" editable="false" prefWidth="101.0" text="Vicosity" />
+                  <TableColumn fx:id="kCol" editable="false" minWidth="0.0" prefWidth="73.0" text="K" />
+                  <TableColumn fx:id="saturationCol" editable="false" prefWidth="120.0" text="Saturation" />
+                  <TableColumn fx:id="depthCol" editable="false" prefWidth="85.0" text="Depth" />
+                  <TableColumn fx:id="thicknessCol" editable="false" prefWidth="106.0" text="Thickness" />
+                  <TableColumn fx:id="tempratureCol" editable="false" prefWidth="130.0" text="Temprature" />
+                  <TableColumn fx:id="lithologyCol" editable="false" prefWidth="105.0" text="Lithology" />
+                  <TableColumn fx:id="gasCapCol" editable="false" prefWidth="100.0" text="Gas cap" />
+               </columns>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#editOilField" text="Edit" />
+                        <MenuItem mnemonicParsing="false" onAction="#deleteOilField" text="Delete" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </center>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Tasks">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#loadAddOilField" text="Add new" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#loadAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>
