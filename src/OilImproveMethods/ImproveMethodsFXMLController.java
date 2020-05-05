@@ -91,7 +91,7 @@ public class ImproveMethodsFXMLController implements Initializable {
             return;
         }
         String ss = Double.toString(cnt);
-        list.add(new MethodResult("Polymers", ss.substring(0, 5)));
+        list.add(new MethodResult("Polymers", ss + "%"));
     }
 
     private void surfactants() {
@@ -125,7 +125,7 @@ public class ImproveMethodsFXMLController implements Initializable {
             return;
         }
         String ss = Double.toString(cnt);
-        list.add(new MethodResult("Surfactants", ss.substring(0, 5)));
+        list.add(new MethodResult("Surfactants", ss + "%" ));
     }
 
     private void alkaline() {
@@ -159,7 +159,7 @@ public class ImproveMethodsFXMLController implements Initializable {
             return;
         }
         String ss = Double.toString(cnt);
-        list.add(new MethodResult("Alkaline", ss.substring(0, 5)));
+        list.add(new MethodResult("Alkaline", ss + "%"));
     }
 
     void inSituComb() {
@@ -193,7 +193,7 @@ public class ImproveMethodsFXMLController implements Initializable {
             return;
         }
         String ss = Double.toString(cnt);
-        list.add(new MethodResult("In Situ Combustion", ss.substring(0, 5)));
+        list.add(new MethodResult("In Situ Combustion", ss + "%"));
 
     }
 
@@ -228,7 +228,7 @@ public class ImproveMethodsFXMLController implements Initializable {
             return;
         }
         String ss = Double.toString(cnt);
-        list.add(new MethodResult("Steam", ss.substring(0, 5)));
+        list.add(new MethodResult("Steam", ss + "%"));
 
     }
 
@@ -263,7 +263,7 @@ public class ImproveMethodsFXMLController implements Initializable {
             return;
         }
         String ss = Double.toString(cnt);
-        list.add(new MethodResult("CO2 Injection", ss.substring(0, 5)));
+        list.add(new MethodResult("CO2 Injection", ss + "%"));
     }
 
 }

@@ -35,7 +35,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        
+
         DataBaseHandler.getInstance();
 
         Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
@@ -44,6 +44,7 @@ public class Main extends Application {
         stage.setScene(scene);
         Util.setStageIcon(stage);
         stage.setResizable(false);
+        stage.setMaximized(true);
         stage.show();
 
         scene.setOnKeyPressed(e -> {

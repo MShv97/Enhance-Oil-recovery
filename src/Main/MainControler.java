@@ -9,8 +9,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 
 /**
  * FXML Controller class
@@ -20,7 +23,7 @@ import javafx.scene.layout.BorderPane;
 public class MainControler implements Initializable {
 
     @FXML
-    private BorderPane root;
+    private HBox hbox;
 
     /**
      * Initializes the controller class.
@@ -28,10 +31,12 @@ public class MainControler implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ImageView img = new ImageView("resources/Main.jpg");
+        img.fitHeightProperty().bind(hbox.heightProperty());
+        
+        img.setPreserveRatio(true);
+        hbox.getChildren().add(img);
 
-        img.fitWidthProperty().bind(root.widthProperty());
-
-        root.setCenter(img);
+        
     }
 
 }

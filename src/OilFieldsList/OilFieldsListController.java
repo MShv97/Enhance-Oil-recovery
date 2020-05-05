@@ -28,7 +28,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -89,6 +88,17 @@ public class OilFieldsListController implements Initializable {
         tempratureCol.setCellValueFactory(new PropertyValueFactory<>("temprature"));
         lithologyCol.setCellValueFactory(new PropertyValueFactory<>("lithology"));
         gasCapCol.setCellValueFactory(new PropertyValueFactory<>("gasCap"));
+        
+        nameCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        apiCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        vicosityCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        kCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        saturationCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        depthCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        thicknessCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        tempratureCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        lithologyCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
+        gasCapCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
     }
 
     private void loadData() {
