@@ -130,8 +130,8 @@ public class DataBaseHandler {
             stmt.setString(7, Float.toString(of.getThickness()));
             stmt.setString(8, Float.toString(of.getTemprature()));
             stmt.setString(9, of.getLithology());
-            stmt.setString(11, of.getGasCap().equals("Yes") ? "true" : "false");
-            stmt.setString(12, Integer.toString(of.getId()));
+            stmt.setString(10, of.getGasCap().equals("Yes") ? "true" : "false");
+            stmt.setString(11, Integer.toString(of.getId()));
             int res = stmt.executeUpdate();
             return (res > 0);
         } catch (SQLException ex) {

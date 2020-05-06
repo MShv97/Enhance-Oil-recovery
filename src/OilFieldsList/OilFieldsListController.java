@@ -88,7 +88,7 @@ public class OilFieldsListController implements Initializable {
         tempratureCol.setCellValueFactory(new PropertyValueFactory<>("temprature"));
         lithologyCol.setCellValueFactory(new PropertyValueFactory<>("lithology"));
         gasCapCol.setCellValueFactory(new PropertyValueFactory<>("gasCap"));
-        
+
         nameCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
         apiCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
         vicosityCol.prefWidthProperty().bind(tableView.widthProperty().divide(10));
