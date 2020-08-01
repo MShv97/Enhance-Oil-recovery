@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OilFieldsList.OilFieldsListController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OilFieldsList.OilFieldsListController">
    <children>
       <BorderPane>
          <center>
@@ -23,9 +23,9 @@
                   <TableColumn fx:id="saturationCol" editable="false" prefWidth="120.0" text="Saturation" />
                   <TableColumn fx:id="depthCol" editable="false" prefWidth="85.0" text="Depth" />
                   <TableColumn fx:id="thicknessCol" editable="false" prefWidth="106.0" text="Thickness" />
-                  <TableColumn fx:id="tempratureCol" editable="false" prefWidth="130.0" text="Temperature" />
-                  <TableColumn fx:id="lithologyCol" editable="false" prefWidth="105.0" text="Lithology" />
-                  <TableColumn fx:id="gasCapCol" editable="false" prefWidth="100.0" text="Gas cap" />
+                  <TableColumn fx:id="tempratureCol" editable="false" prefWidth="155.0" text="Temperature" />
+                  <TableColumn fx:id="lithologyCol" editable="false" prefWidth="114.0" text="Lithology" />
+                  <TableColumn fx:id="gasCapCol" editable="false" prefWidth="93.0" text="Gas cap" />
                </columns>
                <BorderPane.margin>
                   <Insets />
