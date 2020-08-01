@@ -18,12 +18,12 @@
                <columns>
                   <TableColumn fx:id="nameCol" editable="false" prefWidth="147.0" text="Name" />
                   <TableColumn fx:id="apiCol" editable="false" prefWidth="85.0" text="API" />
-                  <TableColumn fx:id="vicosityCol" editable="false" prefWidth="101.0" text="Vicosity" />
+                  <TableColumn fx:id="vicosityCol" editable="false" prefWidth="101.0" text="Viscosity" />
                   <TableColumn fx:id="kCol" editable="false" minWidth="0.0" prefWidth="73.0" text="K" />
                   <TableColumn fx:id="saturationCol" editable="false" prefWidth="120.0" text="Saturation" />
                   <TableColumn fx:id="depthCol" editable="false" prefWidth="85.0" text="Depth" />
                   <TableColumn fx:id="thicknessCol" editable="false" prefWidth="106.0" text="Thickness" />
-                  <TableColumn fx:id="tempratureCol" editable="false" prefWidth="130.0" text="Temprature" />
+                  <TableColumn fx:id="tempratureCol" editable="false" prefWidth="130.0" text="Temperature" />
                   <TableColumn fx:id="lithologyCol" editable="false" prefWidth="105.0" text="Lithology" />
                   <TableColumn fx:id="gasCapCol" editable="false" prefWidth="100.0" text="Gas cap" />
                </columns>
